@@ -1,0 +1,5 @@
+header{width:100%; height:auto; background:cadetblue; color:#fff;}
+header .center{display:flex; justify-content: space-between; padding:20px 0; align-items: center;}
+header .logo{color:#fff}
+header .menu{width:30px; height:30px; border:1px solid #fff; display:flex; align-items: center; justify-content: center;}
+header .menu i.fa{font-size:22px; color:#fff}

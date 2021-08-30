@@ -1,0 +1,4 @@
+.App{display:flex; width:100%; height:auto; flex-direction: column;}
+.App .search_form .center{width:100%; height:auto; display:flex; justify-content: center; padding:10px 0; border-bottom:1px solid cadetblue;}
+.App .search_form input{padding:5px; border:1px solid cadetblue; width:60%;}
+.App .search_form button{width:10%; background:cadetblue; color:#fff; border:0; margin-left:5px;}

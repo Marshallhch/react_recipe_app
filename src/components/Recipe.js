@@ -1,18 +1,19 @@
 import React from "react";
-import Sample from "../assets/sample.jpg";
 
-const Recipe = () => {
+//hooks
+//graphQL
+
+const Recipe = ({ title, calories, img, ingrs }) => {
   return (
     <div>
-      <h2>Chicken Curry</h2>
+      <h2>{title}</h2>
       <ul>
-        <li>1. 사오기</li>
-        <li>2. 자르기</li>
-        <li>3. 끓이기</li>
-        <li>4. 완성</li>
+        {ingrs.map((ingr, i) => (
+          <li key={i}>{ingr.text}</li>
+        ))}
       </ul>
-      <p>칼로리 : 10000</p>
-      <img src={Sample} alt='' />
+      <p>칼로리 : {calories}</p>
+      <img src={img} alt='' />
     </div>
   );
 };

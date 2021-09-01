@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //hooks
 //graphQL
@@ -6,7 +7,20 @@ import React from "react";
 const Recipe = ({ title, calories, img, ingrs }) => {
   return (
     <div>
-      <h2>{title}</h2>
+      <h2>
+        <Link
+          to={{
+            pathname: "/details",
+            state: {
+              title: title,
+              calories: calories,
+              img: img,
+              ingrs: ingrs,
+            },
+          }}>
+          {title}
+        </Link>
+      </h2>
       <ul>
         {ingrs.map((ingr, i) => (
           <li key={i}>{ingr.text}</li>

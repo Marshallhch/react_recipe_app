@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/Header.css";
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
   return (
     <header>
       <div className='center'>
-        <h2 className='logo'>CIY</h2>
+        <h2 className='logo'>
+          <Link to='/'>CIY</Link>
+        </h2>
         <span className='menu' onClick={toggler}>
           {toggle ? (
             <i className='fa fa-bars'></i>

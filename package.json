@@ -1,5 +1,4 @@
 {
-  "homepage": "https://marshallhch.github.io/react_recipe_app",
   "name": "react_recipe_app",
   "version": "0.1.0",
   "private": true,
@@ -41,5 +40,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "homepage": "https://marshallhch.github.io/react_recipe_app"
 }
